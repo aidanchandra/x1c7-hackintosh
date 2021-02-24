@@ -2,8 +2,9 @@
 
 OpenCore-based Hackintosh EFI and guide for Lenovo Thinkpad X1 Carbon Gen 7
 
-
-# What's working
+## What is Working
+<details>
+<summary><strong> WHAT IS WORKING </strong></summary>
 
 In short, x1c7-hackintosh is very stable and is currently my daily driver. I fully recommend this project to anyone looking for a MacBook alternative.
 
@@ -40,7 +41,9 @@ In short, x1c7-hackintosh is very stable and is currently my daily driver. I ful
 
 > ✅ Fully functional; ❓ Untested (might work); ❌ Non-functional
 
+</details>
 
+## Other Repositories
 <details>
 <summary><strong> OTHER REPOSITORIES </strong></summary>
 <br>
@@ -59,7 +62,9 @@ In short, x1c7-hackintosh is very stable and is currently my daily driver. I ful
 
 
 # Credits
-
+<details>
+<summary><strong> CREDITS </strong></summary>
+    
 **[Acidanthera](https://github.com/acidanthera)** <br> 
 For bringing us [OpenCore](https://github.com/acidanthera/OpenCorePkg) and maintaining all the essential kexts, 
 like [VirtualSMC](https://github.com/acidanthera/VirtualSMC), [Lilu](https://github.com/acidanthera/Lilu), [WhateverGreen](https://github.com/acidanthera/WhateverGreen), and many many more! 
@@ -72,5 +77,5 @@ https://github.com/tylernguyen/x1c6-hackintosh)
 **[Dortania](https://dortania.github.io/)** <br> 
 for his awesome OpenCore guides - here to mention [Dortania's OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/) 
 and [OpenCore Post-Install](https://dortania.github.io/OpenCore-Post-Install/)
-
+</details>
 
