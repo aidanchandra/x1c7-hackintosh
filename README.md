@@ -41,6 +41,23 @@ In short, x1c7-hackintosh is very stable and is currently my daily driver. I ful
 > ✅ Fully functional; ❓ Untested (might work); ❌ Non-functional
 
 
+<details>
+<summary><strong> OTHER REPOSITORIES </strong></summary>
+<br>
+
+- x1c7-hackintosh repositories:
+    - [suhrmann/x1c7-hackintosh](https://github.com/suhrmann/x1c7-hackintosh) [fork of tylernguyen/x1c6-hackintosh]
+- x1c6-hackintosh repositories:
+    - [tylernguyen/x1c6-hackintosh](https://github.com/tylernguyen/x1c6-hackintosh) 
+    - [benbender/x1c6-hackintosh](https://github.com/benbender/x1c6-hackintosh)
+    - [zhtengw/EFI-for-X1C6-hackintosh](https://github.com/zhtengw/EFI-for-X1C6-hackintosh)
+- t480-hackintosh repositories:
+    - [EETagent/T480-OpenCore-Hackintosh](https://github.com/EETagent/T480-OpenCore-Hackintosh)
+      Create a pull request if you like to be added, final decision at my discreation.
+</details> 
+
+
+
 # Credits
 
 **[Acidanthera](https://github.com/acidanthera)** <br> 
