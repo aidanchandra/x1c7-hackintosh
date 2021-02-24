@@ -40,7 +40,7 @@ In short, x1c7-hackintosh is very stable and is currently my daily driver. I ful
 | ❓ | iCloud (App Store, iMessage, FaceTime, etc)    |           |
 | ❓ | HiDPI, Handoff, Sidecar                        |           |
 | ❌ | Fingerprint Reader                             |           |
-| ❓ | Power Management Optimizations                 |           |
+| ✅ | Power Management Optimizations                 | Fully working with CPUFriend and CPUFriendFriend, more options with YogaSMC to come |
 
 > ✅ Fully functional; ❓ Untested (might work); ❌ Non-functional
 
