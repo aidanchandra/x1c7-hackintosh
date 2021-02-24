@@ -1,6 +1,9 @@
 # macOS on Thinkpad X1 Carbon 7th Generation, Model 20QE*
-
 OpenCore-based Hackintosh EFI and guide for Lenovo Thinkpad X1 Carbon Gen 7
+
+<p align="center">
+  <img src="./docs/macOS-overview.png" />
+</p>
 
 ## What is Working
 <details>
