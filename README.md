@@ -41,6 +41,7 @@ In short, x1c7-hackintosh is very stable and is currently my daily driver. I ful
 | ❓ | HiDPI, Handoff, Sidecar                        |           |
 | ❌ | Fingerprint Reader                             |           |
 | ✅ | Power Management Optimizations                 | Fully working with CPUFriend and CPUFriendFriend, more options with YogaSMC to come |
+| ✅ | Intel SpeedStep                                | Fully working (Higher performance when plugged in, lower when on battery, tested with GeekBench 5) |
 
 > ✅ Fully functional; ❓ Untested (might work); ❌ Non-functional
 
