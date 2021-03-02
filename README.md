@@ -31,15 +31,15 @@ In short, x1c7-hackintosh is very stable and is currently my daily driver. I ful
 | ✅ | Bluetooth                                      | `IntelBluetoothFirmware` might depend on `AirportItlwm`, that requires Apple's secure boot  |
 | ❌ | WWAN                                           | DISABLED at BIOS to conserve power|
 | ✅ | Ethernet                                       | `IntelMausi.kext` for bundled USB-C adapter |
-| ✅ | Hibernation                                    | hibernatemode=3|
+| ✅ | Hibernation                                    | ``hibernatemode=3`` |
 | ✅ | HDMI output                                    | Requires **WEG?** |
 | ✅ | USB A / USB C                                  |           |
 | ✅ | Thunderbolt 3                                  |           |
-| ✅| Webcam                                         | _checked on 2021-02-19_ |
+| ✅| Webcam                                          | _checked on 2021-02-19_ |
 | ✅ | Audio                                          | ✅ _Internal Speaker_ and _Headphones_ / _Line in_ <br> ⚠️ _Internal Microphone_ not working <br> Realtek ALC285, layout 11, 21, 31 (all seem to work equal) **TODO supported layouts have changed** ➡️ ``boot-args: alcid=71`` |
 | ✅ | iCloud (App Store, iMessage, FaceTime, etc)    | All iServices work |
-| ❓ | HiDPI, Handoff, Sidecar                        | Handoff/sidecar sporadic function. Would not rely on these|
-| ❌ | Fingerprint Reader                             | Disabled in BIOS to save power|
+| ❓ | HiDPI, Handoff, Sidecar                        | Handoff/sidecar sporadic function. Would not rely on these |
+| ❌ | Fingerprint Reader                             | Disabled in BIOS to save power |
 | ✅ | Power Management Optimizations                 | Fully working with CPUFriend and CPUFriendFriend, more options with YogaSMC to come |
 | ✅ | Intel SpeedStep                                | Fully working (Higher performance when plugged in, lower when on battery, tested with GeekBench 5) |
 
