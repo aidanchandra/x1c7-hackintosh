@@ -6,10 +6,11 @@ OpenCore-based Hackintosh EFI and guide for Lenovo Thinkpad X1 Carbon Gen 7. Thi
 </p>
 
 ## What is Working
-<details>
-<summary><strong> WHAT IS WORKING </strong></summary>
 
 In short, x1c7-hackintosh is very stable and is currently my daily driver. I fully recommend this project to anyone looking for a MacBook alternative. 
+
+<details>
+<summary><strong> WHAT IS WORKING </strong></summary>
 
 ### Install
 | working | Device / Step                             | Comment            |
@@ -28,7 +29,7 @@ In short, x1c7-hackintosh is very stable and is currently my daily driver. I ful
 | ✅ | Keyboard                                       | Requires ``VoodooPS2`` |
 | ✅ | Keyboard-Multimedia Fn keys                    | Requires `YogaSMC.kext` + **TODO: Add ACPI here** and [YogaSMC-App](https://github.com/zhen-zen/YogaSMC) |
 | ✅ | WiFi                                           | Native WiFi with `AirportItlwm.kext` - no companion app required |
-| ✅ | Bluetooth                                      | `IntelBluetoothFirmware` <br> ⚠️ audio input (e.g. of headset) is not working, see [#3](https://github.com/aidanchandra/x1c7-hackintosh/issues/3) |
+| ✅ | Bluetooth                                      | `IntelBluetoothFirmware.kext` and `IntelBluetoothInjector.kext` <br> ⚠️ audio input (e.g. of headset) is not working, see [#3](https://github.com/aidanchandra/x1c7-hackintosh/issues/3) |
 | ❌ | WWAN                                           | DISABLED at BIOS to conserve power|
 | ✅ | Ethernet                                       | `IntelMausi.kext` for bundled USB-C adapter |
 | ✅ | Hibernation                                    | ``hibernatemode=3`` |
@@ -46,6 +47,17 @@ In short, x1c7-hackintosh is very stable and is currently my daily driver. I ful
 > ✅ Fully functional; ❓ Untested/Intermittent (might work); ❌ Non-functional
 
 </details>
+
+
+<details>
+<summary><strong> LIMITATIONS </strong></summary>
+  
+Limitations what is not working as expected or improvements:
+
+ - **Bluetooth**: [General Limiations of IntelBluetoothFirmware](https://openintelwireless.github.io/IntelBluetoothFirmware/FAQ.html) + [issue #3](https://github.com/aidanchandra/x1c7-hackintosh/issues/3) 
+
+</details
+
 
 
 ## Hardware
