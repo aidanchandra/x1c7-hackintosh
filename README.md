@@ -56,11 +56,12 @@ Limitations what is not working as expected or improvements:
 
  - **Bluetooth**: [General Limiations of IntelBluetoothFirmware](https://openintelwireless.github.io/IntelBluetoothFirmware/FAQ.html) + [issue #3](https://github.com/aidanchandra/x1c7-hackintosh/issues/3) 
 
-</details
+</details>
 
 
 
 ## Hardware
+
 <details>
 <summary><strong> HARDWARE </strong></summary>
 
