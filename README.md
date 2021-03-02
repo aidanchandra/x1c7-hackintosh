@@ -28,7 +28,7 @@ In short, x1c7-hackintosh is very stable and is currently my daily driver. I ful
 | ✅ | Keyboard                                       | Requires ``VoodooPS2`` |
 | ✅ | Keyboard-Multimedia Fn keys                    | Requires `YogaSMC.kext` + **TODO: Add ACPI here** and [YogaSMC-App](https://github.com/zhen-zen/YogaSMC) |
 | ✅ | WiFi                                           | Native WiFi with `AirportItlwm.kext` - no companion app required |
-| ✅ | Bluetooth                                      | `IntelBluetoothFirmware` might depend on `AirportItlwm`, that requires Apple's secure boot  |
+| ✅ | Bluetooth                                      | `IntelBluetoothFirmware` <br> ⚠️ audio input (e.g. of headset) is not working, see [#3](https://github.com/aidanchandra/x1c7-hackintosh/issues/3) |
 | ❌ | WWAN                                           | DISABLED at BIOS to conserve power|
 | ✅ | Ethernet                                       | `IntelMausi.kext` for bundled USB-C adapter |
 | ✅ | Hibernation                                    | ``hibernatemode=3`` |
