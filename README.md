@@ -36,7 +36,7 @@ In short, x1c7-hackintosh is very stable and is currently my daily driver. I ful
 | ✅ | USB A / USB C                                  |           |
 | ✅ | Thunderbolt 3                                  |           |
 | ✅| Webcam                                         | _checked on 2021-02-19_ |
-| ✅ | Audio                                          | ✅ _Internal Speaker_ and _Headphones_ / _Line in_ <br> ⚠️ _Internal Microphone_ not working <br> Realtek ALC285, layout 11, 21, 31 (all seem to work equal) **TODO supported layouts have changed** ➡️ ``boot-args: alcid=21`` |
+| ✅ | Audio                                          | ✅ _Internal Speaker_ and _Headphones_ / _Line in_ <br> ⚠️ _Internal Microphone_ not working <br> Realtek ALC285, layout 11, 21, 31 (all seem to work equal) **TODO supported layouts have changed** ➡️ ``boot-args: alcid=71`` |
 | ✅ | iCloud (App Store, iMessage, FaceTime, etc)    | All iServices work |
 | ❓ | HiDPI, Handoff, Sidecar                        | Handoff/sidecar sporadic function. Would not rely on these|
 | ❌ | Fingerprint Reader                             | Disabled in BIOS to save power|
@@ -91,7 +91,7 @@ Source: [Lenovo Product Specification Reference (PSREF) [psref.lenovo.com]](http
 <br>
 
 - x1c7-hackintosh repositories:
-    - [suhrmann/x1c7-hackintosh](https://github.com/suhrmann/x1c7-hackintosh) [fork of tylernguyen/x1c6-hackintosh]
+    - [suhrmann/x1c7-hackintosh](https://github.com/suhrmann/x1c7-hackintosh) [fork of tylernguyen/x1c6-hackintosh] _predecessor of this repo_
 - x1c6-hackintosh repositories:
     - [tylernguyen/x1c6-hackintosh](https://github.com/tylernguyen/x1c6-hackintosh) 
     - [benbender/x1c6-hackintosh](https://github.com/benbender/x1c6-hackintosh)
