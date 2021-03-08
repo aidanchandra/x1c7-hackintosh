@@ -1,23 +1,30 @@
-# macOS on Thinkpad X1 Carbon 7th Generation, Model 20QE*, 20QD*
-OpenCore-based Hackintosh EFI and guide for Lenovo Thinkpad X1 Carbon Gen 7. This guide has been generated for both the above model numbers.
+# macOS on Thinkpad X1 Carbon 7th Generation
+OpenCore-based Hackintosh EFI and guide for Lenovo Thinkpad X1 Carbon Gen 7. This guide has been generated for both the model numbers specified below.
 
-<p align="center">
-  <img src="./docs/macOS-overview.png" />
+<p float="center">
+  <img src="./docs/macOS-overview.png" width="500" />
+  <img src="./docs/laptop-image.png" width="300" /> 
 </p>
 
-## What is Working
+# Overview
+## Summary
 
-In short, x1c7-hackintosh is very stable and is currently my daily driver. I fully recommend this project to anyone looking for a MacBook alternative. 
+This X1C7 Hackintosh project aims to be an all-in-one maintained hub for Opencore-based hackintoshes on the Thinkad X1 Carbon Gen 7. In short, this x1c7-hackintosh is very stable and is currently our daily driver (Simon and Aidan). We fully recommend this project to anyone looking for a MacBook alternative. There are also multiple contributors to this project who have all helped in various fashions - see credits.
 
+This repo is meant to serve as a hub and guide for users of the X1C7 and X1Cx community in general.
+<br />
+
+## Functional Overview
+What works, what doesn't and why.
 <details>
 <summary><strong> WHAT IS WORKING </strong></summary>
 
 ### Install
 | working | Device / Step                             | Comment            |
 |:-------:|:------------------------------------------|:-------------------|
-| ☑️ | **Basic Setup**                                 |                    |
 | ✅ | Booting macOS installer                        |                    |
 | ✅ | Installed to HD                                |                    |
+| ✅ | Installed to HD and Dualbooting Windows on the same drive Windows                                | Use [this](https://www.youtube.com/watch?v=ztxHRGdX0Sw&t=3s) guide to setup dualboot on the same drive|
 
 ### Post-Install
 
@@ -34,8 +41,8 @@ In short, x1c7-hackintosh is very stable and is currently my daily driver. I ful
 | ✅ | Ethernet                                       | `IntelMausi.kext` for bundled USB-C adapter |
 | ✅ | Hibernation                                    | ``hibernatemode=3`` |
 | ✅ | HDMI output                                    | Requires **WEG?** |
-| ✅ | USB A / USB C                                  |           |
-| ✅ | Thunderbolt 3                                  |           |
+| ✅ | USB A / USB C                                  | |
+| ✅ | Thunderbolt 3                                  | Tested with a Vega 64 EGUP in a Razer Core X Enclosure, requires TB3 BIOS Assist to be ENABLED|
 | ✅| Webcam                                          | _checked on 2021-02-19_ |
 | ✅ | Audio                                          | ✅ _Internal Speaker_ and _Headphones_ / _Line in_ <br> ⚠️ _Internal Microphone_ not working <br> Realtek ALC285, layout 11, 21, 31 (all seem to work equal) **TODO supported layouts have changed** ➡️ ``boot-args: alcid=71`` |
 | ✅ | iCloud (App Store, iMessage, FaceTime, etc)    | All iServices work |
@@ -58,21 +65,22 @@ Limitations what is not working as expected or improvements:
 
 </details>
 
+<br />
+
+## Hardware Compatability
+Lenovo allows for many different hardware configurations and will update CPU generations while maintaining the same generation. This makes is somewhat confusing to tell exactly what hardware you have and exactly what this project was meant for. The Shared Hardware tab lists all common hardware info between different models of the X1C7. Following tabs for specific model numbers provide small modificaitons needed to the EFI for their respective model numbers, if needed.
+
+Odds are your hardware will work with minor modifications to the EFI
 
 
-## Hardware
 
 <details>
-<summary><strong> HARDWARE </strong></summary>
+<summary><strong> Shared Hardware </strong></summary>
 
 **Again: These are the hardware specs of `20QES01L00` and `20QD-000SUS`:**
 Refer to [ThinkPad_X1_Carbon_7th_Gen_Spec.PDF](https://github.com/suhrmann/x1c7-hackintosh/blob/master/docs/references/ThinkPad_X1_Carbon_7th_Gen_Spec.PDF) for possible stock ThinkPad X1 7th Gen configurations. <br>
 Source: [Lenovo Product Specification Reference (PSREF) [psref.lenovo.com]](https://psref.lenovo.com/Product/ThinkPad/ThinkPad_X1_Carbon_7th_Gen)
 
-| Processor Number                                                                                                                   | Code Name    | # of Cores | # of Threads | Base Frequency | Max Turbo Frequency | Cache | Memory Types | Graphics      |
-| :--------------------------------------------------------------------------------------------------------------------------------- | :----------- | :--------- | :----------- | :------------- | :------------------ | :---- | :----------- | :------------ |
-| [i7-8565U](https://ark.intel.com/content/www/us/en/ark/products/149091/intel-core-i7-8565u-processor-8m-cache-up-to-4-60-ghz.html) | Whiskey Lake <br>(based on Coffee Lake) | 4          | 8            | 1.8 GHz        | 4.6 GHz             | 8 MB  | LPDDR3-2133  | Intel UHD 620 |
-| [i7-8665U](https://ark.intel.com/content/www/us/en/ark/products/193563/intel-core-i7-8665u-processor-8m-cache-up-to-4-80-ghz.html) | Whiskey Lake <br>(based on Coffee Lake) | 4          | 8            | 1.9 GHz        | 4.8 GHz             | 8 MB  | LPDDR3-2133  | Intel UHD 620 |
 
 |                  |                 |
 | :--------------- | :-------------- |
@@ -81,9 +89,9 @@ Source: [Lenovo Product Specification Reference (PSREF) [psref.lenovo.com]](http
 |                  | HDMI 1.4b (Max 4096x2160 @24Hz) |                 |
 | **Ethernet**     | via ThinkPad Ethernet Extension Adapter Gen 2: I219-LM Ethernet (vPro) |
 | **WLAN + BT**    | Intel Wireless-AC 9560, Wi-Fi 2x2 802.11ac + Bluetooth 5.0 |
-| **WWAN(optional)** | - |
+| **WWAN(optional)** | Nothing else supported, no adapters, nothing. Locked by BIOS |
 | **Display**      | 14.0" (355mm) HDR HD (1920 x 1080) |
-| **Camera**       | IR and HD720p camera with ThinkShutte |
+| **Camera**       | IR and HD720p camera with ThinkShutte. Chicony manufacturer |
 | **Audio**        | Realtek ALC3286 codec <br> Linux: ``Realtek ALC285``, layout 11, 21, 31 ; [@acidanthera/AppleALC > Supported codecs [Github]](https://github.com/acidanthera/AppleALC/wiki/Supported-codecs) |
 | **Fingerprint reader** | ✔️ |
 | **NFC (optional)** | ✔️ |
@@ -92,13 +100,57 @@ Source: [Lenovo Product Specification Reference (PSREF) [psref.lenovo.com]](http
  - Keyboard: PS/2
  - TrackPoint: PS/2, included alongside te PS2 Keyboard
  - TrackPad: Synaptics enabled i2c
- - **Thunderbolt:**  Intel JHL6540 (Alpine Ridge 4C) Thunderbolt 3 Bridge (?)
+ - **Thunderbolt:**  Intel JHL6540 (Alpine Ridge 4C) Thunderbolt 3 Bridge with what appears to be native MacOS Support
 
  **NOTE:** The WWAN M.2 slot does **NOT** support SSDs. "If you do manage to fit something in there, you'll be presented with this whitelist error when you try and power the laptop on" [source and photos by @acoutts [Github]](https://github.com/acoutts/x1c7-hackintosh#edit-jan-2-2020) You can modify the bios if you really need the extra SSD.
 </details>
 
+<details>
+<summary><strong> 20QD-000SUS </strong></summary>
+Tested functioning as expected with provided EFI (Aidan's Machine)
 
-## Other Repositories
+| Processor Number                                                                                                                   | Code Name    | # of Cores | # of Threads | Base Frequency | Max Turbo Frequency | Cache | Memory Types | Graphics      |
+| :--------------------------------------------------------------------------------------------------------------------------------- | :----------- | :--------- | :----------- | :------------- | :------------------ | :---- | :----------- | :------------ |
+| [i7-8665U](https://ark.intel.com/content/www/us/en/ark/products/193563/intel-core-i7-8665u-processor-8m-cache-up-to-4-80-ghz.html) | Whiskey Lake <br>(based on Coffee Lake) | 4          | 8            | 1.9 GHz        | 4.8 GHz             | 8 MB  | LPDDR3-2133  | Intel UHD 620 |
+
+</details>
+<details>
+<summary><strong> 20QE-S01L00 </strong></summary>
+Tested functioning as expected with provided EFI (Simon's Machine)
+
+| Processor Number                                                                                                                   | Code Name    | # of Cores | # of Threads | Base Frequency | Max Turbo Frequency | Cache | Memory Types | Graphics      |
+| :--------------------------------------------------------------------------------------------------------------------------------- | :----------- | :--------- | :----------- | :------------- | :------------------ | :---- | :----------- | :------------ |
+| [i7-8565U](https://ark.intel.com/content/www/us/en/ark/products/149091/intel-core-i7-8565u-processor-8m-cache-up-to-4-60-ghz.html) | Whiskey Lake <br>(based on Coffee Lake) | 4          | 8            | 1.8 GHz        | 4.6 GHz             | 8 MB  | LPDDR3-2133  | Intel UHD 620 |
+</details>
+<br /><br />
+
+
+<!---
+# Guide and Resources
+
+There exists a plethora of much more detailed and well maintained guides using Opencore to get MacOS running on a PC. This guide will reference certian parts of those guides frequently for this reason. 
+
+
+<details>
+<summary><strong> Getting Started </strong></summary>
+
+1. [Dortania's Guides](https://dortania.github.io/getting-started/) are the gold standard. We can safely ignore the hardware support function as those are for people who can choose their hardware - we can't with a laptop (yet).
+</details> 
+
+<details>
+<summary><strong> Create USB Installer </strong></summary>
+
+1. Create a MacOS Catalina Installer on an external USB drive using GibMacOS or using a reagular Mac and the app store. 
+2. Mount 
+
+</details> 
+
+<details>
+<summary><strong> Getting Started </strong></summary>
+</details> 
+--->
+
+# Credits
 <details>
 <summary><strong> OTHER REPOSITORIES </strong></summary>
 <br>
@@ -114,9 +166,6 @@ Source: [Lenovo Product Specification Reference (PSREF) [psref.lenovo.com]](http
       Create a pull request if you like to be added, final decision at my discreation.
 </details> 
 
-
-
-# Credits
 <details>
 <summary><strong> CREDITS </strong></summary>
     
