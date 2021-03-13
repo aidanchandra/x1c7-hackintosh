@@ -122,6 +122,20 @@ Tested functioning as expected with provided EFI (Simon's Machine)
 | :--------------------------------------------------------------------------------------------------------------------------------- | :----------- | :--------- | :----------- | :------------- | :------------------ | :---- | :----------- | :------------ |
 | [i7-8565U](https://ark.intel.com/content/www/us/en/ark/products/149091/intel-core-i7-8565u-processor-8m-cache-up-to-4-60-ghz.html) | Whiskey Lake <br>(based on Coffee Lake) | 4          | 8            | 1.8 GHz        | 4.6 GHz             | 8 MB  | LPDDR3-2133  | Intel UHD 620 |
 </details>
+
+<details>
+<summary><strong> 20R1-S05B00 (20R1/20R2) </strong></summary>
+Tested functioning as expected with the FOLLOWING MODIFICATIONS
+
+Cpuid1Data: EC060800 00000000 00000000 00000000
+Cpuid1Mask: FFFFFFFF 00000000 00000000 00000000
+
+(Credit to @muhchaudhary)
+
+| Processor Number                                                                                                                   | Code Name    | # of Cores | # of Threads | Base Frequency | Max Turbo Frequency | Cache | Memory Types | Graphics      |
+| :--------------------------------------------------------------------------------------------------------------------------------- | :----------- | :--------- | :----------- | :------------- | :------------------ | :---- | :----------- | :------------ |
+| [i7-10710u](https://ark.intel.com/content/www/us/en/ark/products/196448/intel-core-i7-10710u-processor-12m-cache-up-to-4-70-ghz.html) | Whiskey Lake <br>(based on Coffee Lake) | 6          | 12            | 1.1 GHz        | 4.7 GHz             | 12 MB  | LPDDR3-2133  | Intel® UHD Graphics for 10th Gen Intel® Processors |
+</details>
 <br /><br />
 
 
