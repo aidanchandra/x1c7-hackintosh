@@ -65,6 +65,14 @@ Limitations what is not working as expected or improvements:
 
 </details>
 
+<details>
+<summary><strong> Common Issues </strong></summary>
+  
+gioLockscreenState error is a common one working with uncommon iGPUs (like our UHD 620)
+See issue #11 for solution
+
+</details>
+
 <br />
 
 ## Hardware Compatability
