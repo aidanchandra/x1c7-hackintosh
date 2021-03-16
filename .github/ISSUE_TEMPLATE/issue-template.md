@@ -19,4 +19,7 @@ CPU
 
 Device
 < If a device is causing problems, e.g.: Broadcom 4360 802.11ac >
+
+EFI
+<A link would be great! But at the VERY least please tell us if you are using our exact efi and if not what modifications you applied>
 ```
