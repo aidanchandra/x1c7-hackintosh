@@ -134,9 +134,11 @@ Tested functioning as expected with provided EFI (Simon's Machine)
 <details>
 <summary><strong> 20R1-S05B00 (20R1/20R2) </strong></summary>
 Tested functioning as expected with the FOLLOWING MODIFICATIONS
-
+  
+```
 Cpuid1Data: EC060800 00000000 00000000 00000000
 Cpuid1Mask: FFFFFFFF 00000000 00000000 00000000
+```
 
 (Credit to @muhchaudhary)
 
