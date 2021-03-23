@@ -187,7 +187,6 @@ There exists a plethora of much more detailed and well maintained guides using O
     - [zhtengw/EFI-for-X1C6-hackintosh](https://github.com/zhtengw/EFI-for-X1C6-hackintosh)
 - t480-hackintosh repositories:
     - [EETagent/T480-OpenCore-Hackintosh](https://github.com/EETagent/T480-OpenCore-Hackintosh)
-      Create a pull request if you like to be added, final decision at my discreation.
 </details> 
 
 <details>
