@@ -6,6 +6,13 @@ OpenCore-based Hackintosh EFI and guide for Lenovo Thinkpad X1 Carbon Gen 7. Thi
   <img src="./docs/laptop-image.png" width="300" /> 
 </p>
 
+
+# Usage
+**This OpenCore config comes with empty PlatformInfo / SMBIOS!**
+
+Follow **Dortania's OpenCore Install Guide** to generate your own: [**Laptop** Coffee Lake and Whiskey Lake > Platforminfo](https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake.html#platforminfo). If you own a Lenovo 20R1 (Intel 10th gen) also note the hint at [Hardware Compatability](https://github.com/aidanchandra/x1c7-hackintosh#hardware-compatability)
+<br />
+
 # Overview
 ## Summary
 
@@ -13,6 +20,7 @@ This X1C7 Hackintosh project aims to be an all-in-one maintained hub for Opencor
 
 This repo is meant to serve as a hub and guide for users of the X1C7 and X1Cx community in general.
 <br />
+
 
 ## Functional Overview
 What works, what doesn't and why.
@@ -61,7 +69,7 @@ What works, what doesn't and why.
   
 Limitations what is not working as expected or improvements:
 
- - **Bluetooth**: [General Limiations of IntelBluetoothFirmware](https://openintelwireless.github.io/IntelBluetoothFirmware/FAQ.html) + [issue #3](https://github.com/aidanchandra/x1c7-hackintosh/issues/3) 
+ - **Bluetooth**: [General Limiations of IntelBluetoothFirmware](https://openintelwireless.github.io/IntelBluetoothFirmware/FAQ.html) + [Bluetooth Headsets No Mic #3](https://github.com/aidanchandra/x1c7-hackintosh/issues/3) 
 
 </details>
 
@@ -205,4 +213,3 @@ https://github.com/tylernguyen/x1c6-hackintosh)
 for his awesome OpenCore guides - here to mention [Dortania's OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/) 
 and [OpenCore Post-Install](https://dortania.github.io/OpenCore-Post-Install/)
 </details>
-
